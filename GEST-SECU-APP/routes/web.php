@@ -21,7 +21,7 @@ use App\Http\Controllers\pages\SiteController;
 
   // pages simple
 
-    Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'index'])/*->middleware('auth')*/->name('dashboard');
     Route::get('/pointages', [PointageController::class, 'index'])->name('pointages');
     Route::get('/plannings', [PlanningController::class, 'index'])->name('plannings');
     Route::get('/alertes', [AlerteController::class, 'index'])->name('alertes');
